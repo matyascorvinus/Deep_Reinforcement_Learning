@@ -41,7 +41,7 @@ The barrier for solving the second version of the environment is slightly differ
 The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30. 
 
 ### Getting Started
-0. Devewlopment Environment:
+0. Development Environment:
     I used a GTX 1060 Laptop with Window 10 Education installed to train my agent, therefore the guideline I shown here is for Window Users:
     The required softwares to run the environment: 
     Python 3.7.*: [Python Installation](https://www.python.org/downloads/release/python-370/)
