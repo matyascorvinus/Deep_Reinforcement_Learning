@@ -44,21 +44,21 @@ The environment is considered solved, when the average (over 100 episodes) of th
 0. Development Environment:
     I used a GTX 1060 Laptop with Window 10 Education installed to train my agent, therefore the guideline I shown here is for Window Users:
     The required softwares to run the environment: 
-    Python 3.7.*: [Python Installation](https://www.python.org/downloads/release/python-370/)
-    Conda: [Anaconda Installation here](https://docs.anaconda.com/anaconda/install/windows/)
-    CUDA Driver:
+    - Python 3.7.*: [Python Installation](https://www.python.org/downloads/release/python-370/)
+    - Conda: [Anaconda Installation here](https://docs.anaconda.com/anaconda/install/windows/)
+    - CUDA Driver:
         - This is Optional Installation, you can train the agents with CPU without any problems (the training was very slow though). BBuf if you have an NVIDIA GPU and you want to have a faster training, you have to install CUDA Drivers.
         - You can find your compatible CUDA Driver for your GPU [here](https://developer.nvidia.com/cuda-gpus).
         - For the CUDA driver, you can follow this [installation guidline](https://medium.com/@viveksingh.heritage/how-to-install-tensorflow-gpu-version-with-jupyter-windows-10-in-8-easy-steps-8797547028a4). But if you are lazy, here is the steps:
-            * You need to install the CUDA Toolkit (version 10.2 is recommend) [installation link](https://developer.nvidia.com/cuda-downloads). I recommend you to choose the .exe installation, and use express installation option, it will install the toolkit to this location "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2".
-            * After that you have to install cuDNN (you have to sign up for NVIDIA first) [here](https://developer.nvidia.com/rdp/cudnn-download), and then copy those files you download to the CUDA Toolkit folder (For express installation : C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2)
-            * Make sure that you create environment paths for the CUDA driver (You can check those paths with the pictures below)
+            - You need to install the CUDA Toolkit (version 10.2 is recommend) [installation link](https://developer.nvidia.com/cuda-downloads). I recommend you to choose the .exe installation, and use express installation option, it will install the toolkit to this location "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2".
+            - After that you have to install cuDNN (you have to sign up for NVIDIA first) [here](https://developer.nvidia.com/rdp/cudnn-download), and then copy those files you download to the CUDA Toolkit folder (For express installation : C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2)
+            - Make sure that you create environment paths for the CUDA driver (You can check those paths with the pictures below)
             
     [imag](CUDA Path 1.png)
     [imag](CUDA Path 2.png).
-            * Restart your PC after the installation, and then you can install Pytorch.
+            - Restart your PC after the installation, and then you can install Pytorch.
             
-    Pytorch: [Pytoch Installation command](https://pytorch.org/), I would recommend this command if you have NVIDIA CUDA-enabled GPU: conda install pytorch torchvision cudatoolkit=10.2 -c pytorch.
+    - Pytorch: [Pytoch Installation command](https://pytorch.org/), I would recommend this command if you have NVIDIA CUDA-enabled GPU: conda install pytorch torchvision cudatoolkit=10.2 -c pytorch.
     
     
     Install OpenAi gym: pip install gym
