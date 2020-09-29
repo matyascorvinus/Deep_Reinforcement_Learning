@@ -1,4 +1,4 @@
-# Reinforcement Learning
+# Deep Reinforcement Learning Repository
 
 This is the repository for learning the fundamental of Reinforcement Learning - a paradigm of machine learning that deals with how software agents carry out the task efficiently based on the environment. 
 The exercises are provided by Udacity courses, and all the algorithm are implemented in [Pytorch](https://pytorch.org/) (which is covered by a free licence ([Modified BSD license](https://en.wikipedia.org/wiki/BSD_licenses#3-clause))). 
