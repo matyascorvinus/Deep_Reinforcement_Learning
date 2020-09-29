@@ -38,5 +38,8 @@ def act(self, state, eps=0.1):
 
 
 DQN Algorithm 
+Here is the algorithm of DQN taken from this scientific report [DQN Nature](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+[imag](DQN Algorithm.png)
+
 Double DQN Algorithm
 Dueling
