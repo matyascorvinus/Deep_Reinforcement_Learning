@@ -68,7 +68,17 @@ class QNetwork_Dueling(nn.Module):
         advantage = F.relu(self.starting_dueling(state))
         for linear in self.hidden_layers_dueling:
             advantage = F.relu(linear(advantage))
-            
+        print("Result")    
+        print(result)
+        print("Action value") 
+        print(self.output(result))    
+        print("Action value expand") 
+        print(self.output(result).expand(result.size(0),self.action_size))
+        print("advantage") 
+        print(self.dueling(advantage))   
+        print("Advantage mean") 
+        print(self.dueling(advantage).mean(1).unsqueeze(1).expand(result.size(0),self.action_size))
+        
         action_values = self.output(result).expand(result.size(0),self.action_size) + self.dueling(advantage) - self.dueling(advantage).mean(1).unsqueeze(1).expand(result.size(0),self.action_size)
         
         return action_values

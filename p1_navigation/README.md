@@ -21,6 +21,10 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
 ### Getting Started
+
+Please check my report.md to view the report of my experiment, and the Navigation notebook to see the result of the training. I have included the video which showcase the agent.
+
+
 0. Development Environment:
     I used a GTX 1060 Laptop with Window 10 Education installed to train my agent, therefore the guideline I shown here is for Window Users:
     The required softwares to run the environment: 

@@ -75,7 +75,7 @@ class Agent():
         with torch.no_grad():
             action_values = self.qnetwork_local(state)
         self.qnetwork_local.train()
-
+        
         # Epsilon-greedy action selection
         if random.random() > eps:
             return np.argmax(action_values.cpu().data.numpy())
