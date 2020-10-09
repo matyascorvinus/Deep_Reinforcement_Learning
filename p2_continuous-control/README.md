@@ -54,7 +54,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
             - After that you have to install cuDNN (you have to sign up for NVIDIA first) [here](https://developer.nvidia.com/rdp/cudnn-download), and then copy those files you download to the CUDA Toolkit folder (For express installation : C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2)
             - Make sure that you create environment paths for the CUDA driver (You can check those paths with the pictures below)
             
-    ![Diagram](p2_continuous-control/CUDA Path 1.png)
+    ![Diagram](/CUDA Path 1.png)
     ![Diagram](CUDA Path 2.png).
             - Restart your PC after the installation, and then you can install Pytorch.
             
