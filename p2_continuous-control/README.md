@@ -94,18 +94,18 @@ Here I used the Deep Deterministic Policy Gradients (DDPG) to run the 20 agents,
 However the slowness of the algorithm, it has done a fantastic job of training the agents to get 10 points average. The algorithm is much easier to implement if you are already familiar with Deep Q Network (DQN) with Q-Learning algorithm, as the architecture of the DDPG agent is almost similar with that of DQN, the differences are while the DQN has one network and the DQN updates the network based on the loss of the target network and the local network, the DDPG has the actor network and the critic network (each has a separated local and target network), and while the actor network decides the action based on the states of the environment (action_next = self.actor_target(next_states)), the critic network will evaluate the actor's decision by create a Q-Values table consisted of state-action pairs (Q_targets_next = self.critic_target(next_states, action_next)), therefore the Q-Values table can be used to update both critic network (from local to target) and actor network (from local to target). 
 
 The DDPG Algorithm
-![Diagram](The DDPG Algorithm.png)
+![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/The%20DDPG%20Algorithm.png)
 
 Here is the Architecture of the Actor-Critic Network
 ![Diagram](Actor-Critic.png)
-![Diagram](Actor-Critic DDPG Architecture.png)
+![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/Actor-Critic%20DDPG%20Architecture.png)
 
 Here is the Architecture of the Agents
-![Diagram](DDPG Agent.png)
+![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/DDPG%20Agent.png)
 
-![Diagram](DDPG Agent Implementation.png)
+![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/DDPG%20Agent%20Implementation.png)
 
-![Diagram](DDPG Agent Implementation - 2.png)
+![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/DDPG%20Agent%20Implementation%20-%202.png)
 
 
 
