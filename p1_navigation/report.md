@@ -33,11 +33,11 @@ For the project, I used 3 methods: the DQN (Deep Q-Network), Double DQN Algorith
 DQN Algorithm 
 Here is the algorithm of DQN taken from this scientific report [DQN Nature](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 
-[imag](DQN Algorithm.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/DQN%20Algorithm.png)
 
 The DQN Algorithm agent has a neural network acted as a function approximator, with the output of the function is a action-values map extracted from the raw data of the environment and processws in several layers of nodes. In this case, I used a simple network consisted of 4 layers of linear transformation ([PyTorch Linear Transformation Layer](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html))
 
-[imag](DQN Architecture.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/DQN%20Architecture.png)
 
 In the Agent architect, to avoid harmful correlations - happpened when the network overshoot after an intense training, I used the Fixed Q-target technique - whichs is created 2 identical networks: Local and Target. Therefore I have create a stable point where the agent can update the network without falling off the cliff.
 
@@ -72,7 +72,7 @@ observation (s) and taking an action (a):
     loss.backward()
     self.optimizer.step()
 
-[imag](DQN Network.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/DQN%20Network.png)
 
 Thats pretty much sum up how the agent worked. I used the Soft Update technique - which only updated around 0.1% of the target network nodes in order to achieve a more stable network, and the Expereince Replay - using the memory buffer and shuffle the data to avoid falling to the correlation trap. 
 def soft_update(self, local_model, target_model, tau):
@@ -134,11 +134,11 @@ The dueling network has two streams to separately estimate (scalar) state-value 
 
 action_values = self.output(result).expand(result.size(0),self.action_size) + self.dueling(advantage) -self.dueling(advantage).mean(1).unsqueeze(1).expand(result.size(0),self.action_size)
 
-[imag](Dueling Equation.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/Dueling%20Equation.png)
 
 Here is my dueling architecture
 
-[imag](Dueling Architecture.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/Dueling%20Architecture.png)
 
 
 Here is the sample how the Dueling method handle the calculation:
@@ -172,17 +172,17 @@ Here is the result of my algorithm implementations:
 
 DQN Algorithm
 
-[imag](DQN Result.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/DQN%20Result.png)
 
 
 Double DQN Algorithm
 
-[imag](Double DQN Result.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/Double%20DQN%20Result.png)
 
 
 Double DQN Algorithm with Dueling method
 
-[imag](Double DQN with Dueling Result.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p1_navigation/Double%20DQN%20with%20Dueling%20Result.png)
 
 
 
