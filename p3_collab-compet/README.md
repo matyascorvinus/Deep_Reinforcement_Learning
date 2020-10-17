@@ -23,6 +23,8 @@ The task is episodic, and in order to solve the environment, your agents must ge
 
 The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
+P/S: Please check the Notebook and the Report as I put down the result of my implementation and how I developed the network.
+
 ### Getting Started
 
 0. Development Environment:
