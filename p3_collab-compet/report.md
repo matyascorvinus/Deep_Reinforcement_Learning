@@ -73,6 +73,8 @@ In both the MADDPG and the DDPG, I use many techniques such as Experience Replay
 
 ![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/Actor-Critic.png)
 
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/Actor-Critic%20DDPG%20Architecture.png)
+
 The Actor-Critic Networks: Basically it is the same as the DDPG Algorithm
 
 ![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/MADDPG%20Architecture.png)
