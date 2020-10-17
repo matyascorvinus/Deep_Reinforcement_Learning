@@ -20,5 +20,7 @@ There are minor corrections on the implementations with the aim of making them e
 
 ## Sources
 [Udacity](https://github.com/udacity/deep-reinforcement-learning)
+
 [OpenAI](https://gym.openai.com/)
+
 [ShangtongZhang/DeepRL](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
