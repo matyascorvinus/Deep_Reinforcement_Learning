@@ -97,5 +97,11 @@ MADDPG Manager
 The MADDPG Results
 
 
+Honestly, I have a hard time implementing the MADDPG algorithm already, as I did not know how to "centralize" the critic network training.
+Thanks to many other people before me, I could come up with the solution to the problem. So I would say that I will searching for more articles that explained the MADDPG better, cause I just relied on the algorithm pseudocodes.
+And I have to learn how to preprocess the data properly, as it is so important when handling multiple agents. Back in DDPG and DQN, I just have to implement the algorithm correctly and basically I am done, but now I realized that preprocess the data is as important as create the architecture.
+
+
 
 Future plans: I will finish the Soccer exercise using the same MADDPG algorithm with Prioritized Experience Replay and Soft Update technique. Then I will do the Finance exercise using DDPG Algorithm and continue the learning there. Furthermore, I will explore other Unity ML-Agents environments to master my skills in implementing Reinforcement Learning Algorithm
+
