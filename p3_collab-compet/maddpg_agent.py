@@ -44,7 +44,7 @@ class Agent():
         self.state_size = state_size
         self.action_size = action_size
         self.num_agents = num_agents
-        self.seed = random.seed(random_seed)
+        self.seed = np.random.seed(random_seed)
         self.eps = EPS_START
         self.eps_decay = 1/(EPS_EP_END*LEARN_NUM)  # set decay rate based on epsilon end target
         self.timestep = 0
@@ -180,7 +180,7 @@ class OUNoise:
         self.mu = mu * np.ones(size)
         self.theta = theta
         self.sigma = sigma
-        self.seed = random.seed(seed)
+        self.seed = np.random.seed(seed)
         self.size = size
         self.reset()
 
