@@ -4,9 +4,13 @@ This is the repository for learning the fundamental of Reinforcement Learning - 
 The exercises are provided by Udacity courses, and all the algorithm are implemented in [Pytorch](https://pytorch.org/) (which is covered by a free licence ([Modified BSD license](https://en.wikipedia.org/wiki/BSD_licenses#3-clause))). 
 
 List of Folders:
-- p1_navigation: Project Navigation for Udacity's Deep Reinforcement Learning courses.
-- p2_continuous-control: Project Continuous Control for Udacity's Deep Reinforcement Learning courses.
-- finance: Udacity's example of using Deep Reinforcement Learning on trading in the stock market, I used this for my personal learning ground.
+- Exercise_I_Navigation_Control: Project Navigation for Udacity's Deep Reinforcement Learning courses.
+
+- Exercise_II_Continuous_Control: Project Continuous Control for Udacity's Deep Reinforcement Learning courses.
+
+- Exercise_III_Collaboration_and_Competition: Project Collaboration and Competition for Udacity's Deep Reinforcement Learning courses.
+
+- Finance: Udacity's example of using Deep Reinforcement Learning on trading in the stock market.
 
 
 The environment for the agents are listed belows:
