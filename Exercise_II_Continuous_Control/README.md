@@ -103,7 +103,7 @@ Here is the Architecture of the Actor-Critic Network
 ![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_Control/Actor-Critic%20DDPG%20Architecture.png)
 
 Here is the Architecture of the Agents
-![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_ControlDDPG%20Agent.png)
+![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_Control/DDPG%20Agent.png)
 
 ![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_Control/DDPG%20Agent%20Implementation.png)
 
