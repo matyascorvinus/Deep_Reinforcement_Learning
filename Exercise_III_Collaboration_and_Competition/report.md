@@ -75,9 +75,9 @@ The Actor networks:
 
 In both the MADDPG and the DDPG, I use many techniques such as Experience Replay : saving the states, actions, rewards, ... to a memory buffer, and then use Prioritize technique to shuffle the memory, so the agent will not lean into the rabbit hole when learning. To stabilize the update, I did not 100% update the weight of the agents, but using soft update where the target weights get a small fraction of the target weughts combined with a bigger portion from the local weights.
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/Actor-Critic.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_Control/Actor-Critic.png)
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/Actor-Critic%20DDPG%20Architecture.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_Control/Actor-Critic%20DDPG%20Architecture.png)
 
 The Actor-Critic Networks: Basically it is the same as the DDPG Algorithm
 
