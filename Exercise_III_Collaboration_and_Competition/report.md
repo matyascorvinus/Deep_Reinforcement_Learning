@@ -34,7 +34,7 @@ The target networks are useful as they add the delay between the time the agent 
 
 However, the way how the critic networks update and correct the actor network is much different in MADDPG than in DDPG. Let me explain why:
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/The%20DDPG%20Algorithm.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/The%20DDPG%20Algorithm.png)
 
 Figure of DDPG Algorithm
 
@@ -50,15 +50,15 @@ With the Actor network, the actor is updated using the sampled policy gradient:
 * First we calculate the loss function, by using the local critic network to generated the Q_values from the current state and the current action created from the same state by the local actor network, then we find the mean values from the Q_values.
 * Then we use the policy gradient method to update the weight of the local actor network.
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/Overview_MADDPG.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/Overview_MADDPG.png)
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/MADDPG_Algorithm.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/MADDPG_Algorithm.png)
 
 Figure of MADDPG Algorithm
 
 IN MADDPG, for each agent networks, the local-target critic networks is centralized - we centralize the network by combining the whole states of the environment which represent all the perspective of all agents together. (So now both the states and the next states will represent the whole environment) (1)
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/Update%20the%20Critic%20Network.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/Update%20the%20Critic%20Network.png)
 
 The Critic Networks:
 * Critic Network used the actions and the states to generate Q_values table. So for the actions, we also concatenate the actions (both current actions created from all agents and next actions generated from the target actor network of the agent) values of all agents together as well. (2)
@@ -66,7 +66,7 @@ The Critic Networks:
 * With the combined might of the states (from (1)) and the actions (from (2)), each agent will use the target critic network to calculate the Q_target tables and therefore calculate the loss function to update the weight of the critic network with the gradient descent step method on the loss. (The loss calculated by the mean squared errors function).
 
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/Update%20the%20Actor%20Network.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/Update%20the%20Actor%20Network.png)
 The Actor networks:
 * In the decision making processes of the Actor network, I used the clip(-1,1) function to narrow the interval of the actions, as it is continuous actions decision making.
 * Almost the same as the Critic one - we combined the current actions created from all agents and current action generated from the local actor network of the agent. (3)
@@ -81,18 +81,18 @@ In both the MADDPG and the DDPG, I use many techniques such as Experience Replay
 
 The Actor-Critic Networks: Basically it is the same as the DDPG Algorithm
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/MADDPG%20Architecture.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/MADDPG%20Architecture.png)
 
 The Architecture of the MADDPG Algorithm Implementation
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/MADDPG%20Agent%20class.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/MADDPG%20Agent%20class.png)
 
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/MADDPG%20Manager%20class.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/MADDPG%20Manager%20class.png)
 
 MADDPG Manager
 
-![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p3_collab-compet/MADDPG%20Results.png)
+![imag](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_III_Collaboration_and_Competition/MADDPG%20Results.png)
 
 The MADDPG Results
 
