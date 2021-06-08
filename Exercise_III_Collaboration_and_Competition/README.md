@@ -43,8 +43,8 @@ P/S: Please check the Notebook and the Report as I put down the result of my imp
             - After that you have to install cuDNN (you have to sign up for NVIDIA first) [here](https://developer.nvidia.com/rdp/cudnn-download), and then copy those files you download to the CUDA Toolkit folder (For express installation : C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2)
             - Make sure that you create environment paths for the CUDA driver (You can check those paths with the pictures below)
             
-    ![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/CUDA%20Path%201.png)
-    ![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/p2_continuous-control/CUDA%20Path%202.png).
+    ![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_Control/CUDA%20Path%201.png)
+    ![Diagram](https://github.com/matyascorvinus/Deep_Reinforcement_Learning/blob/master/Exercise_II_Continuous_Control/CUDA%20Path%202.png).
             - Restart your PC after the installation, and then you can install Pytorch.
             
     - Pytorch: [Pytoch Installation command](https://pytorch.org/), I would recommend this command if you have NVIDIA CUDA-enabled GPU: conda install pytorch torchvision cudatoolkit=10.2 -c pytorch.
